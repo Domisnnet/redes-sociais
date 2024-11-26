@@ -4,39 +4,28 @@
     padding: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 html, body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
 }
-
 body {
-    background: url(../imagens/fundo-madeira.jpg)no-repeat;
+    background: url(../imagens/fundo-madeira.jpg)no-repeat top center;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
 }
-
 main {
     position: relative;
     height: 100vh;
-    padding-top: 80px;
 }
-
-#container {
-    position: relative; 
-    margin-top: 50px;  
-}
-
 iframe#tela {
-    position: absolute;
-    top: 30px;
+    position: relative;
+    top: 80px;
     left: 22px;
     height: 471px;
     width: 268px;
 }
-
 section#telefone {
     position: absolute;
     top: 50%;
@@ -46,17 +35,15 @@ section#telefone {
     height: 627px;
     width: 311px;
 }
-
 section#redes-sociais {
     position: absolute;
     top: 50%;
     right: 20px; 
     transform: translateY(-50%);
-    flex-flow: column nowrap;
     display: flex;
+    flex-direction: column; 
     align-items: flex-end; /* Alinha os itens ao final da linha (direita) */
 }
-
 section#redes-sociais img {
     width: 50px;
     margin: 10px;
@@ -64,7 +51,6 @@ section#redes-sociais img {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
 }
-
 section#redes-sociais img:hover {
     border: 2px solid white;
     transform: translate(-3px, -3px);
